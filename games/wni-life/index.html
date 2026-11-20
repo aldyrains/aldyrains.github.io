@@ -3,16 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WNI Life Simulator · aldyrains</title>
+<title>WNI Life Simulator · Aldi Riansyah</title>
 <meta name="description" content="WNI Life Simulator: game simulasi hidup sebagai warga negara Indonesia, dari bayi sampai tua. Lempar Dadu Takdir, pilih jalanmu. Main offline, tanpa akun.">
 <link rel="canonical" href="https://aldyrains.github.io/games/wni-life/">
-<meta name="theme-color" content="#fbf7f0" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#12110f" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0b0a09">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="aldyrains">
+<meta property="og:site_name" content="Aldi Riansyah">
 <meta property="og:title" content="WNI Life Simulator">
 <meta property="og:description" content="Simulasi hidup WNI dari lahir sampai tua. Lempar Dadu Takdir, pilih jalanmu!">
 <meta property="og:url" content="https://aldyrains.github.io/games/wni-life/">
@@ -22,8 +21,9 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/assets/style.css">
+<link rel="preload" as="image" href="img/hero.webp" fetchpriority="high">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -36,135 +36,161 @@
   "gamePlatform": "Android",
   "operatingSystem": "Android",
   "inLanguage": "id",
-  "author": { "@type": "Organization", "name": "aldyrains", "url": "https://aldyrains.github.io/" }
+  "author": { "@type": "Person", "name": "Aldi Riansyah", "url": "https://aldyrains.github.io/" }
 }
 </script>
 </head>
 <body>
 <a class="skip" href="#isi">Langsung ke isi</a>
 
-<header class="site-header">
+<header class="topbar">
   <div class="wrap">
-    <a class="brand" href="/" aria-label="aldyrains, beranda">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#c8553d"/><circle cx="13.5" cy="18.5" r="5.6" fill="none" stroke="#fff" stroke-width="3.2"/><path d="M20.6 12.6v11.6" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/><path d="M25.2 4.6c1.6 2.1 2.4 3.5 2.4 4.5a2.4 2.4 0 0 1-4.8 0c0-1 .8-2.4 2.4-4.5z" fill="#ffd9a8"/></svg>
-      aldyrains
+    <a class="brand" href="/" aria-label="Aldi Riansyah, beranda">
+      <img src="/assets/logo.webp" width="32" height="32" alt="">
+      <span><b>Aldi Riansyah</b><br><span class="mono">Developer game indie</span></span>
     </a>
-    <nav class="nav" aria-label="Menu utama">
-      <a href="/#game">Game</a>
-      <a href="/#tentang" class="hide-sm">Tentang</a>
-      <a href="/#kontak">Kontak</a>
-    </nav>
+    <a class="mono tag" href="/#game" style="text-decoration:none">← Semua game</a>
   </div>
 </header>
 
-<main id="isi">
-  <div class="game-hero">
+<div class="band game-band">
+  <img src="img/hero.webp" srcset="img/banner.webp 1024w, img/hero.webp 2048w" sizes="100vw" width="2048" height="1000" alt="Ilustrasi WNI Life Simulator: peta Indonesia dengan warga, rumah adat, dan gunung" fetchpriority="high">
+  <div class="shade" aria-hidden="true"></div>
+  <div class="over">
     <div class="wrap">
-      <a class="back" href="/#game">← Semua game</a>
-      <div class="banner" style="margin-top:16px">
-        <img src="img/banner.webp" width="1024" height="500" alt="Banner WNI Life Simulator: peta Indonesia dengan tokoh-tokoh warga" fetchpriority="high">
+      <div class="crumbs mono"><a href="/">Aldi Riansyah</a><span>/</span><span>Game 01</span></div>
+      <div class="game-title">
+        <img class="icon" src="img/icon.webp" width="84" height="84" alt="Ikon WNI Life Simulator">
+        <h1 class="display">WNI Life <em>Simulator</em></h1>
       </div>
-      <div class="title-row">
-        <img class="icon" src="img/icon.webp" width="88" height="88" alt="Ikon WNI Life Simulator">
-        <div>
-          <h1>WNI Life Simulator</h1>
-          <p class="by">aldyrains · Simulasi · Android</p>
-        </div>
-      </div>
-      <p class="tagline">Simulasi hidup WNI dari lahir sampai tua. Setiap tahun kamu melempar Dadu Takdir: hasilnya bisa rezeki nomplok, musibah, atau kejadian sehari-hari yang bikin geleng-geleng kepala.</p>
-      <div class="chips" style="margin-bottom:24px">
-        <span class="chip chip-teal"><span class="dot"></span>Tes tertutup</span>
-        <span class="chip">Gratis, ada iklan</span>
-        <span class="chip">Offline</span>
-        <span class="chip chip-accent">18+</span>
+      <p class="tagline">Simulasi hidup WNI dari lahir sampai tua. Setiap tahun kamu melempar Dadu Takdir: rezeki nomplok, musibah, atau kejadian sehari-hari yang bikin geleng-geleng kepala.</p>
+      <div class="meta">
+        <span class="mono tag-pill live">Tes tertutup</span>
+        <span class="mono tag-pill">Android</span>
+        <span class="mono tag-pill">Gratis, ada iklan</span>
+        <span class="mono tag-pill">Offline</span>
+        <span class="mono tag-pill">18+</span>
       </div>
       <div class="btn-row">
-        <a class="btn btn-primary" href="#penguji">
+        <a class="btn btn-solid" href="#penguji">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.6 2.3c-.3.3-.4.7-.4 1.2v17c0 .5.1.9.4 1.2l.1.1 9.5-9.5v-.2L4.7 2.2l-.1.1Zm12.8 12.8-3.2-3.2v-.2l3.2-3.2.1.1 3.8 2.1c1.1.6 1.1 1.6 0 2.2l-3.8 2.1-.1.1Zm-.1.1L14 11.9l-9.4 9.4c.4.4.9.4 1.6.1l11.1-6.2m0-6.6L6.2 2.3c-.7-.4-1.2-.3-1.6.1L14 11.9l3.3-3.3Z"/></svg>
-          Jadi penguji di Google Play
+          Jadi penguji
         </a>
-        <a class="btn btn-ghost" href="#fitur">Lihat fitur</a>
-      </div>
-
-      <div class="notice" id="penguji">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-        <div>
-          <strong>Sedang tes tertutup di Google Play.</strong> Mau main duluan dan bantu kami rilis? Caranya:
-          <ol>
-            <li>Gabung grup penguji: <a href="https://groups.google.com/g/wnilife-penguji">groups.google.com/g/wnilife-penguji</a> (pakai akun Google yang sama dengan di HP).</li>
-            <li>Buka <a href="https://play.google.com/apps/testing/com.aldiriansyah.wnilife">halaman tes WNI Life</a>, ketuk <em>Jadi penguji</em>.</li>
-            <li>Pasang dari <a href="https://play.google.com/store/apps/details?id=com.aldiriansyah.wnilife">Google Play</a>, lalu main dan kirim masukan.</li>
-          </ol>
-        </div>
+        <a class="btn" href="#fitur">Lihat fitur</a>
       </div>
     </div>
   </div>
+</div>
 
-  <section aria-labelledby="judul-cuplikan" style="padding-top:40px">
+<main id="isi">
+  <section class="sec" id="penguji" aria-labelledby="judul-penguji" style="border-top:0">
     <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Cuplikan</span>
-        <h2 id="judul-cuplikan">Seperti apa main WNI Life?</h2>
+      <div class="sec-head">
+        <span class="mono">Penguji<sup>[1]</sup></span>
+        <h2 class="h2" id="judul-penguji">Main duluan, <em>bantu kami rilis</em></h2>
+      </div>
+      <ol class="steps">
+        <li>
+          <span class="mono">Langkah 01</span>
+          <h3>Gabung grup penguji</h3>
+          <p>Buka <a href="https://groups.google.com/g/wnilife-penguji">grup Penguji WNI Life</a> lalu gabung. Pakai akun Google yang sama dengan di HP.</p>
+        </li>
+        <li>
+          <span class="mono">Langkah 02</span>
+          <h3>Aktifkan tes</h3>
+          <p>Buka <a href="https://play.google.com/apps/testing/com.aldiriansyah.wnilife">halaman tes WNI Life</a> dan ketuk <em>Jadi penguji</em>.</p>
+        </li>
+        <li>
+          <span class="mono">Langkah 03</span>
+          <h3>Pasang dan main</h3>
+          <p>Pasang dari <a href="https://play.google.com/store/apps/details?id=com.aldiriansyah.wnilife">Google Play</a>, main, lalu kirim masukan lewat email.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="judul-cerita">
+    <div class="wrap story">
+      <img class="poster" src="img/poster.webp" width="688" height="1532" loading="lazy" alt="Poster WNI Life Simulator: Ayo, jalani hidup carut mawut khas Konoha! Satu dadu, sejuta drama.">
+      <div class="copy">
+        <span class="mono label">Cerita<sup>[2]</sup></span>
+        <h2 class="h2" id="judul-cerita" style="margin:16px 0 28px">Kamu tidak bisa memilih <em>lahir di mana</em></h2>
+        <p class="quote">“Satu dadu, sejuta drama.”</p>
+        <p>WNI Life Simulator adalah game simulasi kehidupan berbasis teks tentang hidup sebagai warga negara Indonesia, dari bayi sampai tua.</p>
+        <p>Keluarga, kondisi ekonomi, dan daerah asal diundi. Ada yang lahir di kota besar, ada yang di desa. Ada yang orang tuanya lengkap, ada yang dibesarkan nenek. Dari situ, pilihanmu yang menentukan nasib.</p>
+        <p>Setiap pilihan punya akibat untuk uang, kesehatan, kebahagiaan, dan hubunganmu. Saat hidupmu berakhir, lanjutkan cerita sebagai anakmu.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="judul-cuplikan">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="mono">Cuplikan<sup>[3]</sup></span>
+        <h2 class="h2" id="judul-cuplikan">Seperti apa <em>mainnya</em>?</h2>
       </div>
       <div class="shots" tabindex="0" aria-label="Galeri cuplikan layar, geser ke samping">
-        <figure><img src="img/01-dadu.webp" width="540" height="960" loading="lazy" alt="Lempar Dadu Takdir setiap tahun"><figcaption>Satu tahun, satu dadu</figcaption></figure>
-        <figure><img src="img/02-kejadian.webp" width="540" height="960" loading="lazy" alt="Kejadian sehari-hari dengan pilihan"><figcaption>Ribuan kejadian khas Indonesia</figcaption></figure>
-        <figure><img src="img/03-pemilu.webp" width="540" height="960" loading="lazy" alt="Pemilu di dalam game"><figcaption>Pemilu dan hitung cepat</figcaption></figure>
-        <figure><img src="img/04-cuaca.webp" width="540" height="960" loading="lazy" alt="Peringatan cuaca dan bencana per provinsi"><figcaption>Cuaca dan bencana per provinsi</figcaption></figure>
-        <figure><img src="img/05-hp.webp" width="540" height="960" loading="lazy" alt="HP di dalam game"><figcaption>HP di dalam game</figcaption></figure>
-        <figure><img src="img/06-minigame.webp" width="540" height="960" loading="lazy" alt="Mini game"><figcaption>Mini game</figcaption></figure>
-        <figure><img src="img/07-kerja.webp" width="540" height="960" loading="lazy" alt="Karir dan pekerjaan"><figcaption>Sekolah, kampus, karir</figcaption></figure>
-        <figure><img src="img/08-kabar-tahun.webp" width="540" height="960" loading="lazy" alt="Kabar Tahun, rangkuman hidup ala koran"><figcaption>Kabar Tahun ala koran</figcaption></figure>
+        <figure><img src="img/01-dadu.webp" width="540" height="960" loading="lazy" alt="Lempar Dadu Takdir setiap tahun"><figcaption class="mono">01 · Satu tahun, satu dadu</figcaption></figure>
+        <figure><img src="img/02-kejadian.webp" width="540" height="960" loading="lazy" alt="Kejadian sehari-hari dengan pilihan"><figcaption class="mono">02 · Ribuan kejadian</figcaption></figure>
+        <figure><img src="img/03-pemilu.webp" width="540" height="960" loading="lazy" alt="Pemilu di dalam game"><figcaption class="mono">03 · Pemilu</figcaption></figure>
+        <figure><img src="img/04-cuaca.webp" width="540" height="960" loading="lazy" alt="Peringatan cuaca dan bencana per provinsi"><figcaption class="mono">04 · Cuaca dan bencana</figcaption></figure>
+        <figure><img src="img/05-hp.webp" width="540" height="960" loading="lazy" alt="HP di dalam game"><figcaption class="mono">05 · HP di dalam game</figcaption></figure>
+        <figure><img src="img/06-minigame.webp" width="540" height="960" loading="lazy" alt="Mini game"><figcaption class="mono">06 · Mini game</figcaption></figure>
+        <figure><img src="img/07-kerja.webp" width="540" height="960" loading="lazy" alt="Karir dan pekerjaan"><figcaption class="mono">07 · Karir</figcaption></figure>
+        <figure><img src="img/08-kabar-tahun.webp" width="540" height="960" loading="lazy" alt="Kabar Tahun, rangkuman hidup ala koran"><figcaption class="mono">08 · Kabar Tahun</figcaption></figure>
       </div>
     </div>
   </section>
 
-  <section id="fitur" aria-labelledby="judul-fitur" style="padding-top:32px">
+  <section class="sec" id="fitur" aria-labelledby="judul-fitur">
     <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Fitur</span>
-        <h2 id="judul-fitur">Hidup yang tidak bisa kamu pilih, tapi bisa kamu jalani</h2>
+      <div class="sec-head">
+        <span class="mono">Fitur<sup>[4]</sup></span>
+        <h2 class="h2" id="judul-fitur">Hidup yang tidak bisa dipilih, <em>tapi bisa dijalani</em></h2>
       </div>
-      <div class="features">
-        <div class="feature"><span class="emoji" aria-hidden="true">🎲</span><h3>Lahir di mana, diundi</h3><p>Keluarga, kondisi ekonomi, dan daerah asal diundi. Ada yang lahir di kota besar, ada yang di desa. Dari situ, pilihanmu yang menentukan nasib.</p></div>
-        <div class="feature"><span class="emoji" aria-hidden="true">📰</span><h3>Ribuan kejadian satir</h3><p>Jualan keripik, arisan, ormas minta "uang keamanan", banjir, mudik, pinjol, sampai viral di media sosial. Setiap pilihan ada akibatnya.</p></div>
-        <div class="feature"><span class="emoji" aria-hidden="true">🎓</span><h3>Sekolah, kampus, karir</h3><p>Ujian pilihan ganda sungguhan, masuk kampus, lalu cari kerja dari puluhan profesi. Naik jabatan, kena PHK, atau buka usaha.</p></div>
-        <div class="feature"><span class="emoji" aria-hidden="true">👨‍👩‍👧</span><h3>Keluarga dan generasi</h3><p>Pacaran, menikah, punya anak dan cucu, pelihara hewan. Saat hidupmu berakhir, lanjutkan cerita sebagai anakmu.</p></div>
-        <div class="feature"><span class="emoji" aria-hidden="true">🗳️</span><h3>Pemilu dan bencana</h3><p>Baca janji kampanye, coblos, lihat hasil hitung cepat. Waspadai peringatan dini cuaca dan bencana per provinsi.</p></div>
-        <div class="feature"><span class="emoji" aria-hidden="true">🏆</span><h3>Koleksi dan mini game</h3><p>Tawar harga di pasar, karaoke, ujian, dan lainnya. Puluhan ending, gelar, dan prestasi untuk dikoleksi.</p></div>
+      <div class="modules">
+        <div class="module" tabindex="0"><div class="top mono"><span>Modul 01</span><span>+</span></div><div><h3>Dadu Takdir</h3><p>Setiap tahun satu lemparan: rezeki nomplok, musibah, atau kejadian sehari-hari. Hasilnya wajib diterima, atau minta Doa Ibu.</p></div></div>
+        <div class="module" tabindex="0"><div class="top mono"><span>Modul 02</span><span>+</span></div><div><h3>Kejadian satir</h3><p>Lebih dari seribu kejadian: jualan keripik, arisan, ormas minta "uang keamanan", banjir, mudik, pinjol, sampai viral di medsos.</p></div></div>
+        <div class="module" tabindex="0"><div class="top mono"><span>Modul 03</span><span>+</span></div><div><h3>Sekolah dan karir</h3><p>Ujian pilihan ganda sungguhan, masuk kampus, cari kerja dari puluhan profesi. Naik jabatan, kena PHK, atau buka usaha.</p></div></div>
+        <div class="module" tabindex="0"><div class="top mono"><span>Modul 04</span><span>+</span></div><div><h3>Keluarga</h3><p>Pacaran, menikah, punya anak dan cucu, pelihara hewan. Saat hidupmu berakhir, lanjutkan sebagai anakmu.</p></div></div>
+        <div class="module" tabindex="0"><div class="top mono"><span>Modul 05</span><span>+</span></div><div><h3>Pemilu dan bencana</h3><p>Baca janji kampanye, coblos, lihat hitung cepat. Waspadai peringatan dini cuaca dan bencana per provinsi.</p></div></div>
+        <div class="module" tabindex="0"><div class="top mono"><span>Modul 06</span><span>+</span></div><div><h3>HP dan mini game</h3><p>Chat keluarga, belanja daring, misi tahunan. Tawar harga di pasar, karaoke, dan puluhan ending untuk dikoleksi.</p></div></div>
       </div>
     </div>
   </section>
 
-  <section aria-labelledby="judul-info" style="padding-top:32px">
+  <section class="sec" aria-labelledby="judul-info">
     <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Info</span>
-        <h2 id="judul-info">Sekilas</h2>
+      <div class="sec-head">
+        <span class="mono">Info<sup>[5]</sup></span>
+        <h2 class="h2" id="judul-info">Sekilas</h2>
       </div>
       <dl class="facts">
-        <div><dt>Platform</dt><dd>Android 7.0+</dd></div>
-        <div><dt>Bahasa</dt><dd>Indonesia</dd></div>
-        <div><dt>Harga</dt><dd>Gratis, ada iklan</dd></div>
-        <div><dt>Pembelian opsional</dt><dd>Paket Sultan (bebas iklan)</dd></div>
-        <div><dt>Akun</dt><dd>Tidak perlu</dd></div>
-        <div><dt>Usia</dt><dd>18+</dd></div>
+        <div><dt class="mono">Platform</dt><dd>Android 7.0+</dd></div>
+        <div><dt class="mono">Bahasa</dt><dd>Indonesia</dd></div>
+        <div><dt class="mono">Harga</dt><dd>Gratis, ada iklan</dd></div>
+        <div><dt class="mono">Pembelian opsional</dt><dd>Paket Sultan (bebas iklan)</dd></div>
+        <div><dt class="mono">Akun</dt><dd>Tidak perlu</dd></div>
+        <div><dt class="mono">Usia</dt><dd>18+</dd></div>
       </dl>
-      <p class="fine" style="margin-top:28px">Game ini fiksi dan satire untuk pemain dewasa (18+). Semua tokoh, partai, merek, dan lembaga di dalamnya rekaan. Ada simulasi judi plesetan yang hanya memakai uang di dalam game, tanpa uang sungguhan dan tanpa hadiah nyata, justru untuk menunjukkan bahwa judi selalu merugikan. Game ini tidak berafiliasi dengan pemerintah atau lembaga mana pun.</p>
-      <p class="fine"><a href="/wni-life-privacy/">Kebijakan privasi</a> · Dukungan: <a href="mailto:aldyrains30@gmail.com?subject=WNI%20Life%20Simulator">aldyrains30@gmail.com</a></p>
+      <p class="fine">Game ini fiksi dan satire untuk pemain dewasa (18+). Semua tokoh, partai, merek, dan lembaga di dalamnya rekaan. Ada simulasi judi plesetan yang hanya memakai uang di dalam game, tanpa uang sungguhan dan tanpa hadiah nyata, justru untuk menunjukkan bahwa judi selalu merugikan. Game ini tidak berafiliasi dengan pemerintah atau lembaga mana pun.</p>
+      <p class="fine mono" style="margin-top:20px"><a href="/wni-life-privacy/">Kebijakan privasi</a> · <a href="mailto:aldyrains30@gmail.com?subject=WNI%20Life%20Simulator">Dukungan: aldyrains30@gmail.com</a></p>
     </div>
   </section>
 </main>
 
-<footer class="site-footer">
+<footer class="footer">
   <div class="wrap">
-    <span>© 2026 aldyrains</span>
-    <nav aria-label="Tautan bawah">
-      <a href="/">Beranda</a>
-      <a href="/wni-life-privacy/">Kebijakan privasi WNI Life</a>
-      <a href="mailto:aldyrains30@gmail.com">Kontak</a>
-    </nav>
+    <div class="row mono">
+      <span>© 2026 Aldi Riansyah</span>
+      <nav aria-label="Tautan bawah">
+        <a href="/">Beranda</a>
+        <a href="/wni-life-privacy/">Privasi WNI Life</a>
+        <a href="mailto:aldyrains30@gmail.com">Email</a>
+      </nav>
+    </div>
   </div>
+  <div class="wordmark" aria-hidden="true">Aldi Riansyah</div>
 </footer>
 </body>
 </html>
