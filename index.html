@@ -55,9 +55,10 @@
   <img src="/games/wni-life/img/hero.webp" srcset="/games/wni-life/img/banner.webp 1024w, /games/wni-life/img/hero.webp 2048w" sizes="100vw" width="2048" height="1000" alt="" fetchpriority="high">
   <nav class="pills" aria-label="Menu utama">
     <a class="mono" href="#game">Game<sup>[1]</sup></a>
-    <a class="mono" href="#angka">Angka<sup>[2]</sup></a>
-    <a class="mono" href="#tentang">Tentang<sup>[3]</sup></a>
-    <a class="mono" href="#kontak">Kontak<sup>[4]</sup></a>
+    <a class="mono" href="#main">Main<sup>[2]</sup></a>
+    <a class="mono" href="#angka">Angka<sup>[3]</sup></a>
+    <a class="mono" href="#tentang">Tentang<sup>[4]</sup></a>
+    <a class="mono" href="#kontak">Kontak<sup>[5]</sup></a>
     <a class="mono" href="/myresume/#home">Resume<sup>↗</sup></a>
   </nav>
 </div>
@@ -73,7 +74,8 @@
         <p>Semua bisa dimainkan kapan saja, tanpa akun dan tanpa internet.</p>
       </div>
       <div class="btn-row">
-        <a class="btn btn-solid" href="#game">Lihat game</a>
+        <a class="btn btn-solid" href="#main">🎲 Coba Dadu Takdir</a>
+        <a class="btn" href="#game">Lihat game</a>
         <a class="btn" href="/games/wni-life/#penguji">Jadi penguji</a>
       </div>
     </div>
@@ -118,10 +120,56 @@
     </div>
   </section>
 
+  <section class="sec play" id="main" aria-labelledby="judul-main">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="mono">Main<sup>[2]</sup></span>
+        <h2 class="h2" id="judul-main">Lempar <em>Dadu Takdir</em>, jalani lima tahun</h2>
+      </div>
+
+      <div class="dg" id="dadu">
+        <aside class="dg-hud" aria-label="Status hidupmu">
+          <div class="dg-top">
+            <div class="dg-age"><span class="mono label">Umur</span><b id="dg-age">25</b></div>
+            <span class="mono label" id="dg-year">Tahun 0 dari 5</span>
+          </div>
+          <ul class="dg-bars">
+            <li data-stat="health" role="meter" aria-label="Sehat" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"><span class="mono">❤️ Sehat</span><i><s></s></i><b>70</b></li>
+            <li data-stat="happiness" role="meter" aria-label="Bahagia" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"><span class="mono">😊 Bahagia</span><i><s></s></i><b>60</b></li>
+            <li data-stat="stres" class="bad" role="meter" aria-label="Stres" aria-valuemin="0" aria-valuemax="100" aria-valuenow="30"><span class="mono">😩 Stres</span><i><s></s></i><b>30</b></li>
+          </ul>
+          <div class="dg-money"><span class="mono label">💰 Uang</span><b id="dg-money">Rp5 jt</b></div>
+          <p class="mono label dg-log-h">Catatan hidup</p>
+          <ol class="dg-log" id="dg-log" aria-label="Catatan hidup per tahun"></ol>
+        </aside>
+
+        <div class="dg-stage">
+          <div class="dg-bar">
+            <span class="mono label">Klik dadunya atau tombolnya</span>
+            <button type="button" class="dg-sound mono" id="dg-sound" aria-pressed="true">Suara</button>
+          </div>
+          <div class="dg-die-wrap" title="Lempar dadu">
+            <div class="die" id="dg-die" aria-hidden="true">
+              <span class="f f1"><i></i></span>
+              <span class="f f2"><i></i><i></i></span>
+              <span class="f f3"><i></i><i></i><i></i></span>
+              <span class="f f4"><i></i><i></i><i></i><i></i></span>
+              <span class="f f5"><i></i><i></i><i></i><i></i><i></i></span>
+              <span class="f f6"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            </div>
+            <span class="dg-shadow" aria-hidden="true"></span>
+          </div>
+          <div class="dg-card" id="dg-card" aria-live="polite"></div>
+        </div>
+      </div>
+      <p class="mono label dg-note">Kejadian di atas diambil langsung dari WNI Life Simulator. Versi lengkapnya punya lebih dari 1000.</p>
+    </div>
+  </section>
+
   <section class="wrap" id="angka" aria-label="WNI Life dalam angka">
     <div class="stats">
       <div class="lead">
-        <span class="mono label">Angka<sup>[2]</sup></span>
+        <span class="mono label">Angka<sup>[3]</sup></span>
         <h3 style="margin-top:14px">WNI Life dalam angka</h3>
         <p>Satu hidup, dari bayi sampai tua, diundi dan dijalani tahun demi tahun.</p>
       </div>
@@ -134,7 +182,7 @@
   <section class="sec" id="tentang" aria-labelledby="judul-tentang" style="border-top:0">
     <div class="wrap">
       <div class="sec-head">
-        <span class="mono">Tentang<sup>[3]</sup></span>
+        <span class="mono">Tentang<sup>[4]</sup></span>
         <h2 class="h2" id="judul-tentang"><em>Satu orang</em>, dari ide sampai rilis</h2>
       </div>
       <div class="about">
@@ -155,7 +203,7 @@
 
   <section class="sec contact" id="kontak" aria-labelledby="judul-kontak">
     <div class="wrap">
-      <span class="mono">Kontak<sup>[4]</sup></span>
+      <span class="mono">Kontak<sup>[5]</sup></span>
       <h2 class="h2" id="judul-kontak">Masukan, laporan bug,<br>atau ajakan <em>kerja sama</em>?</h2>
       <a class="mail" href="mailto:aldyrains30@gmail.com">aldyrains30@gmail.com</a>
     </div>
@@ -176,5 +224,6 @@
   </div>
   <div class="wordmark" aria-hidden="true">Aldi Riansyah</div>
 </footer>
+<script src="/assets/main.js" defer></script>
 </body>
 </html>
